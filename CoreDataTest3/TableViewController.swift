@@ -11,7 +11,7 @@ import CoreData
 class TableViewController: UITableViewController {
 
     @IBOutlet var tableview: UITableView!
-    var time:[NSDate!] = []
+    var time = []
     var managedContext:NSManagedObjectContext!
     var timearry:TimeArry!
     override func viewDidLoad() {
@@ -27,7 +27,7 @@ class TableViewController: UITableViewController {
         }else{
             self.timearry=result[0]
         }
-        self.time = self.timearry.times.allObjects as [NSdate]
+        self.time = self.timearry.times.allObjects
         self.navigationItem.leftBarButtonItem = self.editButtonItem()
     }
 
@@ -68,6 +68,10 @@ class TableViewController: UITableViewController {
         }
         
         
+        let timeFetch = NSFetchRequest(entityName: "TimeArry")
+        let result = managedContext.executeFetchRequest(timeFetch, error: &error) as! [TimeArry]!
+        self.timearry=result[0]
+        self.time = self.timearry.times.allObjects
         self.tableview.reloadData()
     }
     
@@ -76,35 +80,51 @@ class TableViewController: UITableViewController {
 
         var fmt=NSDateFormatter()
         fmt.dateFormat = "yyyy-MM-dd-hh-mm-ss"
-   //     let date = self.timearry.times.member(indexPath.row) as! Time
-      //      println(self.timearry.times)
-  //      let showtime = fmt.stringFromDate(date.time)
+        let date = self.time[indexPath.row] as! Time
+        let showtime = fmt.stringFromDate(date.time)
         
-        cell.textLabel!.text = "1"
+        cell.textLabel!.text = showtime
 
         return cell
     }
 
 
-    /*
+    
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         // Return NO if you do not want the specified item to be editable.
         return true
     }
-    */
+    
 
-    /*
+    
     // Override to support editing the table view.
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+        //1
+        let timeToRemove = self.time[indexPath.row] as! Time
+        //2
+        let times = self.timearry.times.mutableCopy() as! NSMutableSet
+        times.removeObject(timeToRemove)
+        self.timearry.times = times.copy() as! NSSet
+        //3
+        managedContext.deleteObject(timeToRemove)
+        //4
+        var error: NSError?
+        if !managedContext.save(&error) {
+            println("Could not save: \(error)")
+        }
+        
+        let timeFetch = NSFetchRequest(entityName: "TimeArry")
+        let result = managedContext.executeFetchRequest(timeFetch, error: &error) as! [TimeArry]!
+        self.timearry=result[0]
+        self.time = self.timearry.times.allObjects
+        tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
+    
 
     /*
     // Override to support rearranging the table view.
