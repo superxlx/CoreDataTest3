@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>41311C4C-F59A-4F51-9238-F6A6C156CB54</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CoreDataTest3</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ED7AB1136B692D1F349C8CEBF77266E10D7DA2FF</key>
+		<string>https://github.com/superxlx/CoreDataTest3.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CoreDataTest3.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ED7AB1136B692D1F349C8CEBF77266E10D7DA2FF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/superxlx/CoreDataTest3.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ED7AB1136B692D1F349C8CEBF77266E10D7DA2FF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ED7AB1136B692D1F349C8CEBF77266E10D7DA2FF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CoreDataTest3</string>
+		</dict>
+	</array>
+</dict>
+</plist>
