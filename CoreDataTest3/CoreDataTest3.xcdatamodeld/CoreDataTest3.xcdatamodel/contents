@@ -4,10 +4,10 @@
         <attribute name="time" optional="YES" attributeType="Date" syncable="YES"/>
     </entity>
     <entity name="TimeArry" representedClassName="CoreDataTest3.TimeArry" syncable="YES">
-        <relationship name="times" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Time" syncable="YES"/>
+        <relationship name="times" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Time" syncable="YES"/>
     </entity>
     <elements>
-        <element name="TimeArry" positionX="-387" positionY="-0" width="128" height="58"/>
         <element name="Time" positionX="-54" positionY="-9" width="128" height="58"/>
+        <element name="TimeArry" positionX="-387" positionY="-0" width="128" height="58"/>
     </elements>
 </model>

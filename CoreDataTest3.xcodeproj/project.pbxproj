@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		2A571AC71AE53EA9006BDC7D /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A571AC61AE53EA8006BDC7D /* Time.swift */; };
-		2A571AC91AE53EC1006BDC7D /* TimeArry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A571AC81AE53EC1006BDC7D /* TimeArry.swift */; };
 		2AA2414B1AE4B7FD0060E759 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA2414A1AE4B7FD0060E759 /* CoreDataStack.swift */; };
 		2AA2414E1AE4CBC30060E759 /* CoreDataTest3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2AA2414C1AE4CBC30060E759 /* CoreDataTest3.xcdatamodeld */; };
 		2AA241501AE4D7810060E759 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA2414F1AE4D7810060E759 /* TableViewController.swift */; };
+		2ABB76971AE5F3210075DD85 /* TimeArry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABB76961AE5F3210075DD85 /* TimeArry.swift */; };
 		2AE23D141AE3F081005C4436 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE23D131AE3F081005C4436 /* AppDelegate.swift */; };
 		2AE23D191AE3F081005C4436 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AE23D171AE3F081005C4436 /* Main.storyboard */; };
 		2AE23D1B1AE3F081005C4436 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AE23D1A1AE3F081005C4436 /* Images.xcassets */; };
@@ -31,10 +31,10 @@
 
 /* Begin PBXFileReference section */
 		2A571AC61AE53EA8006BDC7D /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
-		2A571AC81AE53EC1006BDC7D /* TimeArry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeArry.swift; sourceTree = "<group>"; };
 		2AA2414A1AE4B7FD0060E759 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		2AA2414D1AE4CBC30060E759 /* CoreDataTest3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataTest3.xcdatamodel; sourceTree = "<group>"; };
 		2AA2414F1AE4D7810060E759 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		2ABB76961AE5F3210075DD85 /* TimeArry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeArry.swift; sourceTree = "<group>"; };
 		2AE23D0E1AE3F081005C4436 /* CoreDataTest3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataTest3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AE23D121AE3F081005C4436 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2AE23D131AE3F081005C4436 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,7 +67,7 @@
 		2AE23D051AE3F081005C4436 = {
 			isa = PBXGroup;
 			children = (
-				2A571AC81AE53EC1006BDC7D /* TimeArry.swift */,
+				2ABB76961AE5F3210075DD85 /* TimeArry.swift */,
 				2A571AC61AE53EA8006BDC7D /* Time.swift */,
 				2AE23D101AE3F081005C4436 /* CoreDataTest3 */,
 				2AE23D261AE3F081005C4436 /* CoreDataTest3Tests */,
@@ -226,7 +226,7 @@
 			files = (
 				2A571AC71AE53EA9006BDC7D /* Time.swift in Sources */,
 				2AA2414E1AE4CBC30060E759 /* CoreDataTest3.xcdatamodeld in Sources */,
-				2A571AC91AE53EC1006BDC7D /* TimeArry.swift in Sources */,
+				2ABB76971AE5F3210075DD85 /* TimeArry.swift in Sources */,
 				2AA2414B1AE4B7FD0060E759 /* CoreDataStack.swift in Sources */,
 				2AA241501AE4D7810060E759 /* TableViewController.swift in Sources */,
 				2AE23D141AE3F081005C4436 /* AppDelegate.swift in Sources */,
