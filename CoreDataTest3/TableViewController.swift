@@ -116,10 +116,6 @@ class TableViewController: UITableViewController {
         if !managedContext.save(&error) {
             println("Could not save: \(error)")
         }
-        
-        let timeFetch = NSFetchRequest(entityName: "TimeArry")
-        let result = managedContext.executeFetchRequest(timeFetch, error: &error) as! [TimeArry]!
-        self.timearry=result[0]
 
         tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         } else if editingStyle == .Insert {
